@@ -1,0 +1,15 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Portfolio</h1>
+  <mat-grid-list cols="{{cols}}" >
+    <div *ngFor="let tile of tiles">
+      <mat-grid-tile>
+        <div class="container">
+          <img class="tile-image" src="{{tile.imageSrc}}" alt={{tile.imageAlt}}>
+          <div class="bottom-text mat-h1">{{ tile.title }}</div>
+        </div>
+        
+      </mat-grid-tile>
+    </div>
+    
+  </mat-grid-list>
+  </div> 
